@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block meta %}{% include 'BootstrapBundle:base:meta.html.twig' %}{% endblock %}
+    {% block stylesheets %}{% include 'BootstrapBundle:base:css.html.twig' %}{% endblock %}
+    <title>{% block title "Bootstrap 3.3.7 and Symfony 3.2 Integration" %}</title>
+</head>
+<body>
+<div id="wrap">
+    {% block nav %}{% endblock %}
+    {% block body %}
+        <div class="container">
+            {% block header '<h1>Bootstrap 3.3.7 and Symfony 3.2 Integration</h1>' %}
+            {% block content %}{% include 'Bootstrap3Bundle:base:body.html.twig' %}{% endblock %}
+        </div>
+    {% endblock %}
+</div>
+
+{% block footer %}{% include 'BootstrapBundle:base:footer.html.twig' %}{% endblock %}
+{% block javascripts %}{% include 'BootstrapBundle:base:js.html.twig' %}{% endblock %}
+</body>
+</html>

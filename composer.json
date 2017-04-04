@@ -1,0 +1,22 @@
+{
+  "name": "mihaiureche/symfony3-bootstrap3",
+  "type": "library",
+  "description": "Integrates Bootstrap 3.3.7 with Symfony 3.2",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mihai Ureche",
+      "email": "ureche.mihai@gmail.com"
+    }
+  ],
+  "config": {
+    "component-dir": "vendor/components"
+  },
+  "require": {
+    "twitter/bootstrap": "3.3.7",
+    "components/jquery": "3.2.1"
+  },
+  "autoload": {
+    "psr-0": {"MU\\Bundle\\BootstrapBundle": "src/"}
+  }
+}
